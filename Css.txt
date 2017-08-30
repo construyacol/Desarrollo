@@ -1,0 +1,12 @@
+Datos sobre css
+las posiciones absolutas funcionan con base en la relatividad de nuestro elemento.
+
+.notification{
+position:relative;
+}
+
+.notification.after{
+position:absolute;
+}
+
+el atributo inherit o herencia sirve para heredar estilos de las clase padre 

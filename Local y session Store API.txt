@@ -1,0 +1,104 @@
+ds.valorizate.com.co/frontend/admin/Admin.html
+
+
+<!--
+
+<script>/Funcion de Capturar, Almacenar datos y Limpiar campos/ 
+$(document).ready(function(){
+      $(’#boton-guardar’).click(function(){ 
+           /Captura de datos escrito en los inputs/       
+           var nom = document.getElementById(“nombretxt”).value; 
+           var apel = document.getElementById(“apellidotxt”).value;
+           /Guardando los datos en el LocalStorage/
+           localStorage.setItem(“Nombre”, nom);
+           localStorage.setItem(“Apellido”, apel);
+           /Limpiando los campos o inputs/ 
+           document.getElementById(“nombretxt”).value = “”;
+           document.getElementById(“apellidotxt”).value = “”;
+               });
+                  }); 
+                  /Funcion Cargar y Mostrar datos/ 
+            $(document).ready(function(){  
+                $(’#boton-cargar’).click(function(){  
+                /Obtener datos almacenados/ 
+                var nombre = localStorage.getItem(“Nombre”);
+                var apellido = localStorage.getItem(“Apellido”);
+                 /Mostrar datos almacenados/     
+                document.getElementById(“nombre”).innerHTML = nombre; document.getElementById(“apellido”).innerHTML = apellido;    });   });</script>
+
+<center>
+
+
+
+ <script>
+ /*Funcion de Capturar, Almacenar datos y Limpiar campos*/ 
+ $(document).ready(function(){
+
+       $('#boton-guardar').click(function(){ 
+
+
+             /*Captura de datos escrito en los inputs*/       
+             var nom = document.getElementById("nombretxt").value;
+             var apel = document.getElementById("apellidotxt").value; 
+
+
+             /*Guardando los datos en el LocalStorage*/ 
+             sessionStorage.setItem("Nombre", nom); 
+             sessionStorage.setItem("Apellido", apel);
+
+ 
+             /*Limpiando los campos o inputs*/ 
+             document.getElementById("nombretxt").value = ""; 
+             document.getElementById("apellidotxt").value = "";    
+             });   
+             }); 
+
+
+             /*Funcion Cargar y Mostrar datos*/ 
+             $(document).ready(function(){      
+             	$('#boton-cargar').click(function(){ 
+
+             	 /*Obtener datos almacenados*/ 
+             	 var nombre = sessionStorage.getItem("Nombre"); 
+             	 var apellido = sessionStorage.getItem("Apellido"); 
+
+
+
+             	 /*Mostrar datos almacenados*/     
+             	 document.getElementById("nombre").innerHTML = nombre;        
+             	 document.getElementById("apellido").innerHTML = apellido;    
+             	 });   
+             	 });</script>
+
+
+             	 
+-->
+
+
+
+ /*
+
+    animation-name: cuadrado, segundaAnimacion;  - añadir segunda animación a la misma clase
+    animation-delay: 1s;  -  tiempo que demorara en iniciar la animación
+    animation-iteration-count: infinite;  - veces que se repetirá la animación
+
+    animation-direction: reverse;  -  invierte el orden de la animación 
+    animation-direction: alternate; - alterna el orden de manera invertida en la animacion de manera constante
+
+    animation-fill-mode: forwards; - la animación queda estatica en el 100%
+    animation-play-state: paused;  -  Pausar animación se utiliza en hover o eventos click
+    
+    animation-timing-function: steps(60); numero de fotogramas por el tiempo que dura la animación
+
+
+    Tipo de velocidades:;
+    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
+
+    para utilizar movimientos de elementos con left: top: right o bottom. debemos primero darle position: relative o absolute al elemento;
+    mover en total un elemento de izquierda a derecha = left: calc(100% - ancho elemento);
+    
+    */
